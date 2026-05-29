@@ -1,0 +1,6 @@
+{
+  "name": "Aarihant Enterprises",
+  "description": "Authorized multi-brand sales center representing the world's finest laptop, desktop, and professional hardware lines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

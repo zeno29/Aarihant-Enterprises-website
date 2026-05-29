@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Times New Roman", Times, serif;
+  --font-display: "Times New Roman", Times, serif;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+  }
+  
+  .glass-panel {
+    background: rgba(19, 27, 46, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(132, 148, 149, 0.15);
+  }
+
+  /* Custom cool scrollbars in deep space theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #060e20;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2d3449;
+    border-radius: 4px;
+    border: 2px solid #060e20;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00dbe7;
+  }
+}
