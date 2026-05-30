@@ -212,6 +212,7 @@ export default function ContactForm({ prefilledProduct, prefilledBrand, onClearP
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  maxLength={80}
                   placeholder="e.g. John Doe"
                   className={`w-full bg-[#060e20] border rounded-lg p-3 text-sm text-white placeholder-[#b9cacb]/30 focus:outline-none focus:ring-1 ${
                     errors.name ? 'border-red-400 focus:ring-red-400' : 'border-[#3a494b]/60 focus:border-[#00dbe7] focus:ring-[#00dbe7]'
@@ -235,6 +236,7 @@ export default function ContactForm({ prefilledProduct, prefilledBrand, onClearP
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  maxLength={100}
                   placeholder="e.g. john@example.com"
                   className={`w-full bg-[#060e20] border rounded-lg p-3 text-sm text-white placeholder-[#b9cacb]/30 focus:outline-none focus:ring-1 ${
                     errors.email ? 'border-red-400 focus:ring-red-400' : 'border-[#3a494b]/60 focus:border-[#00dbe7] focus:ring-[#00dbe7]'
@@ -258,6 +260,7 @@ export default function ContactForm({ prefilledProduct, prefilledBrand, onClearP
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  maxLength={25}
                   placeholder="e.g. +91 98765 43210"
                   className={`w-full bg-[#060e20] border rounded-lg p-3 text-sm text-white placeholder-[#b9cacb]/30 focus:outline-none focus:ring-1 ${
                     errors.phone ? 'border-red-400 focus:ring-red-400' : 'border-[#3a494b]/60 focus:border-[#00dbe7] focus:ring-[#00dbe7]'
@@ -299,6 +302,7 @@ export default function ContactForm({ prefilledProduct, prefilledBrand, onClearP
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                maxLength={2000}
                 placeholder="What details can our specialists prepare for you? For custom configurations, specify RAM/storage requirements."
                 rows={5}
                 className={`w-full bg-[#060e20] border rounded-lg p-3 text-sm text-white placeholder-[#b9cacb]/30 focus:outline-none focus:ring-1 ${

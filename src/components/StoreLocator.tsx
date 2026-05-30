@@ -235,6 +235,7 @@ export default function StoreLocator() {
                         type="text"
                         value={newName}
                         onChange={(e) => setNewName(e.target.value)}
+                        maxLength={50}
                         placeholder="e.g. Asus Pride Cell - Katra"
                         className="w-full bg-[#060e20] border border-[#3a494b]/60 rounded-lg p-2.5 text-xs text-white placeholder-[#b9cacb]/30 focus:outline-none focus:border-[#00dbe7]"
                       />
@@ -247,6 +248,7 @@ export default function StoreLocator() {
                         type="text"
                         value={newPhone}
                         onChange={(e) => setNewPhone(e.target.value)}
+                        maxLength={25}
                         placeholder="e.g. +91 94500 12345"
                         className="w-full bg-[#060e20] border border-[#3a494b]/60 rounded-lg p-2.5 text-xs text-white placeholder-[#b9cacb]/30 focus:outline-none focus:border-[#00dbe7]"
                       />
@@ -261,6 +263,7 @@ export default function StoreLocator() {
                       type="text"
                       value={newAddress}
                       onChange={(e) => setNewAddress(e.target.value)}
+                      maxLength={120}
                       placeholder="e.g. Shop 45, Indira Bhawan, Civil Lines, Prayagraj, UP 211001"
                       className="w-full bg-[#060e20] border border-[#3a494b]/60 rounded-lg p-2.5 text-xs text-white placeholder-[#b9cacb]/30 focus:outline-none focus:border-[#00dbe7]"
                     />
@@ -275,6 +278,7 @@ export default function StoreLocator() {
                         type="text"
                         value={newHours}
                         onChange={(e) => setNewHours(e.target.value)}
+                        maxLength={50}
                         placeholder="e.g. Mon-Sat: 10:30 AM - 8:30 PM"
                         className="w-full bg-[#060e20] border border-[#3a494b]/60 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-[#00dbe7]"
                       />
@@ -287,6 +291,7 @@ export default function StoreLocator() {
                         type="email"
                         value={newEmail}
                         onChange={(e) => setNewEmail(e.target.value)}
+                        maxLength={80}
                         placeholder="e.g. sales@computercastle.co.in"
                         className="w-full bg-[#060e20] border border-[#3a494b]/60 rounded-lg p-2.5 text-xs text-white placeholder-[#b9cacb]/30 focus:outline-none focus:border-[#00dbe7]"
                       />
