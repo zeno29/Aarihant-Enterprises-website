@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, ChevronRight, Store } from 'lucide-react';
-import showroomImg from '../../assets/showroom.png';
+import showroomImg from '../../assets/showroom.jpg';
 
 interface HeroProps {
   onExploreClick: () => void;
