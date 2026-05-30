@@ -79,12 +79,12 @@ export default function ProductSection({ onInquireClick }: ProductSectionProps) 
         
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="font-display-lg text-[32px] sm:text-[40px] text-white font-extrabold mb-4 tracking-tight">
-            Authorized Hardware Catalog
+          <h2 className="font-display-lg text-[26px] sm:text-[40px] text-white font-extrabold mb-4 tracking-tight">
+            Official HP, Lenovo, ASUS & Acer Showroom in Prayagraj (Allahabad)
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#00dbe7] to-[#013fb9] mx-auto rounded-full mb-4"></div>
-          <p className="text-[#b9cacb] max-w-xl mx-auto font-light text-sm sm:text-base">
-            Configure, compare and inquire about elite hardware from official HP, Lenovo, ASUS, and Acer distributions lines.
+          <p className="text-[#b9cacb] max-w-2xl mx-auto font-light text-sm sm:text-base">
+            Configure, compare, and reserve authentic next-gen hardware. We are your official local sales center for HP Spectre, Lenovo ThinkPad, ASUS ROG, and Acer Predator configurations in Allahabad and Prayagraj.
           </p>
         </div>
 
