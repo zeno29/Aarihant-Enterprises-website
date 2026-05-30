@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, ChevronRight, Store } from 'lucide-react';
+import showroomImg from '../../assets/showroom.png';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -25,10 +26,9 @@ export default function Hero({ onExploreClick, onShowroomClick }: HeroProps) {
         {/* Cinematic Main Laptop Graphic Backdrop */}
         <div className="absolute inset-0 z-0">
           <img
-            alt="Cinematic Premium Laptop Backlight"
-            className="w-full h-full object-cover opacity-35 object-center scale-105"
-            src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&q=80&w=1920"
-            referrerPolicy="no-referrer"
+            alt="Official Aarihant Enterprises HP World Showroom"
+            className="w-full h-full object-cover opacity-25 object-center scale-105"
+            src={showroomImg}
           />
           {/* Layered Gradient mask for seamless integration into deep slate background */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0b1326] via-[#0b1326]/50 to-transparent"></div>
