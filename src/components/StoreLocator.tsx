@@ -354,11 +354,22 @@ export default function StoreLocator() {
                         : 'border-[#849495]/15 hover:border-[#849495]/40 hover:bg-[#131b2e]/60'
                     }`}
                   >
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
-                      isSelected ? 'bg-[#00f2ff]/20 text-[#00f2ff]' : 'bg-[#222a3d]/50 text-[#b9cacb]'
-                    }`}>
-                      <MapPin className="w-5.5 h-5.5" />
-                    </div>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation(); // Avoid card selection trigger
+                        const destination = loc.lat && loc.lng ? `${loc.lat},${loc.lng}` : encodeURIComponent(loc.address);
+                        window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}`, '_blank', 'noopener,noreferrer');
+                      }}
+                      title="Get directions on Google Maps"
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer relative group ${
+                        isSelected 
+                          ? 'bg-[#00f2ff]/20 text-[#00f2ff] hover:bg-[#00f2ff]/30 shadow-[0_0_15px_rgba(0,242,255,0.35)] border border-[#00f2ff]/30' 
+                          : 'bg-[#222a3d]/50 text-[#b9cacb] hover:text-[#00f2ff] hover:bg-[#00f2ff]/10 border border-[#849495]/10 hover:border-[#00f2ff]/30'
+                      }`}
+                    >
+                      <MapPin className="w-5.5 h-5.5 transition-transform duration-300 group-hover:rotate-12" />
+                    </button>
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start gap-2">
                         <h3 className="text-white text-sm sm:text-base font-bold mb-1 truncate">{loc.name}</h3>
