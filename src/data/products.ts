@@ -284,7 +284,7 @@ export const LOCATIONS: StoreLocation[] = [
     id: 'prayagraj-tashkand',
     name: 'HP World - Tashkand Marg',
     address: 'LG3, Vashistha Vinayak Tower, Tashkent Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001, India',
-    phone: '+91 9833979156',
+    phone: '+91 7234991010',
     hours: 'Mon-Sun: 10:00 AM - 8:00 PM',
     email: 'tashkand.prayagraj@hpworldstores.in',
     coordinates: { x: 52, y: 43 },
@@ -295,7 +295,7 @@ export const LOCATIONS: StoreLocation[] = [
     id: 'prayagraj-asus',
     name: 'Computer Castle - ASUS Store',
     address: 'Shop no 2, LDA Centre, Nawab Yusuf Rd, behind Mahindra Showroom, Civil Lines, Prayagraj, Uttar Pradesh 211001, India',
-    phone: '+91 8009090808',
+    phone: '+91 7007463636',
     hours: 'Mon-Sun: 11:00 AM - 8:00 PM',
     email: 'prayagraj@computercastle.co.in',
     coordinates: { x: 50, y: 46 },
@@ -306,11 +306,22 @@ export const LOCATIONS: StoreLocation[] = [
     id: 'prayagraj-lenovo',
     name: 'Lenovo Exclusive Store - Tushar Infotech',
     address: '124E/20/L L.G-7 M.G Marg Vinayak Tower, opp. Coffee House, Civil Lines, Prayagraj, Uttar Pradesh 211001, India',
-    phone: '+91 8042754141',
+    phone: '+91 7991497077',
     hours: 'Mon-Sun: 10:30 AM - 9:00 PM',
     email: 'tushar.prayagraj@lenovostores.in',
     coordinates: { x: 54, y: 41 },
     lat: 25.451011,
     lng: 81.838318
+  },
+  {
+    id: 'prayagraj-acer',
+    name: 'Acer Mall - Exclusive Store',
+    address: '124E/20/G-3, M.G Marg, Vinayak Tower (Opp. Coffee House), Civil Lines, Prayagraj (Allahabad), Uttar Pradesh, 211001',
+    phone: '+91 8853010224',
+    hours: 'Mon-Sun: 11:00 AM - 8:30 PM',
+    email: 'prayagraj.acer@acermallstores.in',
+    coordinates: { x: 55, y: 39 },
+    lat: 25.451050,
+    lng: 81.838350
   }
 ];
