@@ -115,7 +115,8 @@ export const LOCATIONS: StoreLocation[] = [
     email: 'prayagraj@computercastle.co.in',
     coordinates: { x: 50, y: 46 },
     lat: 25.451842,
-    lng: 81.832962
+    lng: 81.832962,
+    mapUrl: 'https://maps.app.goo.gl/VQQevvP6QAFPkCWp6'
   },
   {
     id: 'prayagraj-lenovo',
