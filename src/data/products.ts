@@ -139,6 +139,7 @@ export const LOCATIONS: StoreLocation[] = [
     email: 'prayagraj.acer@acermallstores.in',
     coordinates: { x: 55, y: 39 },
     lat: 25.451050,
-    lng: 81.838350
+    lng: 81.838350,
+    mapUrl: 'https://maps.app.goo.gl/VuEGD6PSuSEESKmbA'
   }
 ];
