@@ -44,7 +44,7 @@ export default function AboutCredibility() {
           </motion.h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#00dbe7] to-[#013fb9] mx-auto rounded-full mb-6"></div>
           <p className="text-[#b9cacb] max-w-xl mx-auto font-light text-sm sm:text-base">
-            Aarihant Enterprises stands for authenticity. We avoid parallel imports and gray-market items to keep your investments secure.
+            As the most trusted source for laptops and computers in Allahabad & Prayagraj, Aarihant Enterprises stands for authenticity. We secure your tech investments with 100% genuine factory hardware.
           </p>
         </div>
 

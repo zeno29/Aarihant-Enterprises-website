@@ -26,7 +26,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
           </div>
           
           <p className="text-sm text-[#b9cacb]/80 max-w-sm font-light leading-relaxed">
-            Authorized multi-brand sales center representing the world's finest laptop, desktop, and professional hardware lines. Offering official warranty safety, diagnostic showrooms, and premium IT services on local levels.
+            Authorized multi-brand sales center representing the world's finest laptops and computers in Prayagraj & Allahabad. Offering official warranty safety, diagnostic showrooms, and premium IT services.
           </p>
         </div>
 

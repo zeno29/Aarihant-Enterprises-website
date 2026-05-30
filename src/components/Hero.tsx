@@ -66,7 +66,7 @@ export default function Hero({ onExploreClick, onShowroomClick }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-body-lg text-lg sm:text-xl text-[#b9cacb] max-w-2xl mx-auto mb-10 leading-relaxed font-light"
         >
-          Official Retail Partners for Global Tech Leaders. Access authentic, military-grade hardware configurations backed by warranty protection and certified expert store support.
+          Your Premier Destination for Authorized Laptops & Computers in Prayagraj & Allahabad. Access authentic, global hardware configurations backed by official brand warranty protection and certified store support.
         </motion.p>
 
         {/* Call to Actions */}
