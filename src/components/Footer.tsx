@@ -38,23 +38,18 @@ export default function Footer({ onScrollTo }: FooterProps) {
           </h5>
           <ul className="space-y-2 text-xs font-semibold text-[#b9cacb]">
             <li>
-              <button onClick={() => onScrollTo('categories')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer">
+              <button onClick={() => onScrollTo('support')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer text-left">
+                Tech Showrooms
+              </button>
+            </li>
+            <li>
+              <button onClick={() => onScrollTo('categories')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer text-left">
                 Product Showcase
               </button>
             </li>
             <li>
-              <button onClick={() => onScrollTo('brands')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer">
-                Partners & Brands
-              </button>
-            </li>
-            <li>
-              <button onClick={() => onScrollTo('about')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer">
+              <button onClick={() => onScrollTo('about')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer text-left">
                 Quality Standards
-              </button>
-            </li>
-            <li>
-              <button onClick={() => onScrollTo('support')} className="hover:text-white transition-colors uppercase tracking-wider cursor-pointer">
-                Tech Showrooms
               </button>
             </li>
           </ul>

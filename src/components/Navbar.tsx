@@ -19,9 +19,8 @@ export default function Navbar({ onScrollTo, activeSection }: NavbarProps) {
   }, []);
 
   const navLinks = [
-    { id: 'categories', label: 'Products' },
-    { id: 'brands', label: 'Brands' },
-    { id: 'support', label: 'Support' }
+    { id: 'support', label: 'Showrooms' },
+    { id: 'categories', label: 'Products' }
   ];
 
   return (

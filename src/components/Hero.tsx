@@ -80,7 +80,7 @@ export default function Hero({ onExploreClick, onShowroomClick }: HeroProps) {
             onClick={onExploreClick}
             className="w-full sm:w-auto bg-[#00f2ff] text-[#00164e] px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-[0_0_35px_rgba(0,242,255,0.4)] hover:bg-white transition-all transform hover:-translate-y-1 cursor-pointer group"
           >
-            Explore Categories
+            Explore Products
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
           
