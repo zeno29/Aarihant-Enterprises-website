@@ -361,7 +361,7 @@ export default function StoreLocator() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start gap-2">
-                        <h4 className="text-white text-sm sm:text-base font-bold mb-1 truncate">{loc.name}</h4>
+                        <h3 className="text-white text-sm sm:text-base font-bold mb-1 truncate">{loc.name}</h3>
                       </div>
                       <p className="text-[#b9cacb]/90 text-xs mb-2 font-light leading-relaxed">{loc.address}</p>
                       
@@ -395,10 +395,10 @@ export default function StoreLocator() {
                 <span className="text-[10px] font-mono font-bold text-[#b9cacb]/50 uppercase tracking-widest block mb-1">
                   Active Display Position
                 </span>
-                <h4 className="text-white font-bold flex items-center gap-2 text-sm sm:text-base">
+                <h3 className="text-white font-bold flex items-center gap-2 text-sm sm:text-base">
                   <Landmark className="w-5 h-5 text-[#00dbe7]" />
                   {selectedLocation ? selectedLocation.name : 'No showrooms selected'}
-                </h4>
+                </h3>
               </div>
 
               {/* MAP BODY */}
@@ -519,9 +519,9 @@ export default function StoreLocator() {
                       <div className="h-10 w-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-3 text-[#00dbe7]">
                         <Settings className="w-5 h-5 animate-pulse" />
                       </div>
-                      <h4 className="text-white text-xs sm:text-sm font-bold tracking-tight mb-2">
+                      <h3 className="text-white text-xs sm:text-sm font-bold tracking-tight mb-2">
                         Interactive Google Maps Setup Requested
-                      </h4>
+                      </h3>
                       <p className="text-[11px] text-[#b9cacb]/85 max-w-[340px] leading-relaxed mb-3">
                         A real Google Map requires your private API key to display the coordinates on-site in beautiful satellite views.
                       </p>
