@@ -358,10 +358,11 @@ export default function StoreLocator() {
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation(); // Avoid card selection trigger
-                        const destination = loc.lat && loc.lng ? `${loc.lat},${loc.lng}` : encodeURIComponent(loc.address);
-                        window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}`, '_blank', 'noopener,noreferrer');
+                        // Exact search query to hit the registered Google Business Profile directly
+                        const query = `${loc.name}, ${loc.address}`;
+                        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`, '_blank', 'noopener,noreferrer');
                       }}
-                      title="Get directions on Google Maps"
+                      title="View Store on Google Maps"
                       className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer relative group ${
                         isSelected 
                           ? 'bg-[#00f2ff]/20 text-[#00f2ff] hover:bg-[#00f2ff]/30 shadow-[0_0_15px_rgba(0,242,255,0.35)] border border-[#00f2ff]/30' 
