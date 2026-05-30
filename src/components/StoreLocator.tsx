@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, Clock, Phone, Mail, Landmark, Plus, Trash2, Settings, ShieldCheck, X } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, Landmark, Plus, Settings, ShieldCheck, X } from 'lucide-react';
 import { APIProvider, Map, AdvancedMarker, Pin, useMap } from '@vis.gl/react-google-maps';
 import { LOCATIONS } from '../data/products';
 import { StoreLocation } from '../types';
@@ -135,20 +135,7 @@ export default function StoreLocator() {
     setTimeout(() => setFormSuccess(''), 4000);
   };
 
-  // Delete Showroom Handler
-  const handleDeleteShowroom = (id: string, e: React.MouseEvent) => {
-    e.stopPropagation(); // Avoid triggering selected tab change
-    if (confirm('Are you sure you want to delete this showroom from the registry?')) {
-      const updated = locations.filter((loc) => loc.id !== id);
-      setLocations(updated);
-      saveToLocalStorage(updated);
-      
-      // If deleted active selection, fallback to first item
-      if (selectedLocation?.id === id) {
-        setSelectedLocation(updated[0] || null);
-      }
-    }
-  };
+  // Showrooms are persistent and cannot be deleted by standard users.
 
   // Fallback map click coordinate helper
   const handleFallbackMapClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -370,16 +357,6 @@ export default function StoreLocator() {
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start gap-2">
                         <h4 className="text-white text-sm sm:text-base font-bold mb-1 truncate">{loc.name}</h4>
-                        {/* admin deletion capability */}
-                        {locations.length > 1 && (
-                          <button
-                            onClick={(e) => handleDeleteShowroom(loc.id, e)}
-                            className="text-[#b9cacb]/40 hover:text-red-400 p-1 rounded-md hover:bg-[#222a3d]/40 transition-all cursor-pointer shrink-0"
-                            title="Delete Registry"
-                          >
-                            <Trash2 className="w-3.5 h-3.5" />
-                          </button>
-                        )}
                       </div>
                       <p className="text-[#b9cacb]/90 text-xs mb-2 font-light leading-relaxed">{loc.address}</p>
                       
