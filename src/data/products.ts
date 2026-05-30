@@ -127,7 +127,8 @@ export const LOCATIONS: StoreLocation[] = [
     email: 'tushar.prayagraj@lenovostores.in',
     coordinates: { x: 54, y: 41 },
     lat: 25.451011,
-    lng: 81.838318
+    lng: 81.838318,
+    mapUrl: 'https://maps.app.goo.gl/cKXfsfp8ubsiJXjY8'
   },
   {
     id: 'prayagraj-acer',
