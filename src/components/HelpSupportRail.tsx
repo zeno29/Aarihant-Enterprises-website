@@ -16,7 +16,7 @@ export default function HelpSupportRail({ onContactClick }: HelpSupportRailProps
     {
       icon: <PhoneCall className="w-5 h-5 text-[#00dbe7]" />,
       label: 'Direct Call',
-      action: () => window.open('tel:+15550123456'),
+      action: () => window.open('tel:+919833979156'),
       color: 'bg-[#00f2ff]/20 text-[#00f2ff] hover:bg-[#00f2ff]/30'
     },
     {
