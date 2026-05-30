@@ -103,7 +103,8 @@ export const LOCATIONS: StoreLocation[] = [
     email: 'tashkand.prayagraj@hpworldstores.in',
     coordinates: { x: 52, y: 43 },
     lat: 25.449712,
-    lng: 81.840215
+    lng: 81.840215,
+    mapUrl: 'https://maps.app.goo.gl/aL61j3RPyY9gWc5g7'
   },
   {
     id: 'prayagraj-asus',

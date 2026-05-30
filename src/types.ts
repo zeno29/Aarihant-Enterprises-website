@@ -39,4 +39,5 @@ export interface StoreLocation {
   coordinates: { x: number; y: number }; // Simulated coordinate offsets for fallback
   lat?: number;
   lng?: number;
+  mapUrl?: string;
 }

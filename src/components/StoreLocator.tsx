@@ -358,9 +358,9 @@ export default function StoreLocator() {
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation(); // Avoid card selection trigger
-                        // Exact search query to hit the registered Google Business Profile directly
-                        const query = `${loc.name}, ${loc.address}`;
-                        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`, '_blank', 'noopener,noreferrer');
+                        // Open direct Google Maps URL if configured, otherwise search by query
+                        const targetUrl = loc.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc.name + ", " + loc.address)}`;
+                        window.open(targetUrl, '_blank', 'noopener,noreferrer');
                       }}
                       title="View Store on Google Maps"
                       className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer relative group ${
